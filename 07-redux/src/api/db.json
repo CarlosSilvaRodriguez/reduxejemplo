@@ -1,54 +1,22 @@
 {
   "santos": [
     {
-      "id": 1,
-      "name": "Seiya",
-      "constellation": "Pegaso"
+      "id": "bKBjQb0uwx1UN9bZMuig",
+      "contenido": "esta es una mision",
+      "autor": "soy jian",
+      "creacion": {
+        "_seconds": 1645971902,
+        "_nanoseconds": 892000000
+      }
     },
     {
-      "id": 2,
-      "name": "Shiryu",
-      "constellation": "Dragón"
-    },
-    {
-      "id": 3,
-      "name": "Hyoga",
-      "constellation": "Cisne"
-    },
-    {
-      "id": 4,
-      "name": "Shun",
-      "constellation": "Andrómeda"
-    },
-    {
-      "id": 5,
-      "name": "Ikki",
-      "constellation": "Fénix"
-    },
-    {
-      "id": 6,
-      "name": "Mú",
-      "constellation": "Aries"
-    },
-    {
-      "id": 7,
-      "name": "Saga",
-      "constellation": "Geminis"
-    },
-    {
-      "name": "Kanón",
-      "constellation": "Géminis",
-      "id": 1626132723014
-    },
-    {
-      "name": "Shura",
-      "constellation": "Capricornio",
-      "id": 1626133398548
-    },
-    {
-      "name": "Asmita",
-      "constellation": "Virgo",
-      "id": 1639705920657
+      "id": "zgOCVvVxjYdHDQw3kO1o",
+      "contenido": "Dato V45",
+      "autor": "Dato V45",
+      "creacion": {
+        "_seconds": 1645972577,
+        "_nanoseconds": 869000000
+      }
     }
   ]
 }

@@ -14,13 +14,16 @@ export function crudReducer(state = initialState, action) {
   switch (action.type) {
     case READ_ALL_DATA: {
       //console.log(action.payload);
+      console.log("ver");
+      console.log(action.payload);
       return {
         ...state,
         db: action.payload.map((data) => data),
       };
     }
     case CREATE_DATA: {
-      //console.log(action.payload);
+      console.log("crear");
+      console.log(action.payload);
       return {
         ...state,
         db: [...state.db, action.payload],

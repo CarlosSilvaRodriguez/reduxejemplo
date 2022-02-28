@@ -13,7 +13,7 @@ import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
 
-const CrudApi = () => {
+const CrudApiMision = () => {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
   const { db } = state.crud;
@@ -23,7 +23,6 @@ const CrudApi = () => {
   const [loading, setLoading] = useState(false);
 
   let api = helpHttp();
-  //let url = "http://localhost:5001/santos";
   let url = "http://localhost:5000/strategy-node/us-central1/app/api/mision";
 
   useEffect(() => {
@@ -31,7 +30,7 @@ const CrudApi = () => {
     helpHttp()
       .get(url)
       .then((res) => {
-        console.log(res);
+        //console.log(res);
         if (!res.err) {
           //setDb(res);
           dispatch(readAllAction(res));
@@ -46,21 +45,20 @@ const CrudApi = () => {
   }, [url, dispatch]);
 
   const createData = (data) => {
-    console.log("los datos: " );
-    console.log(data);
-    
+    data.id = Date.now();
+    //console.log(data);
+
     let options = {
       body: data,
       headers: { "content-type": "application/json" },
     };
 
     api.post(url, options).then((res) => {
+      //console.log(res);
       if (!res.err) {
         //setDb([...db, res]);
-        console.log("ENTRO A CORRECTO");
         dispatch(createAction(res));
       } else {
-        console.log("ENTRO AL ERROR");
         setError(res);
       }
     });

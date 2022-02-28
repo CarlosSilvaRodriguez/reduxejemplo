@@ -8,8 +8,9 @@ const CrudTable = ({ data, setDataToEdit, deleteData }) => {
       <table>
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Constelación</th>
+            <th>Autor</th>
+            <th>Mision</th>
+            <th>Creacion</th>
             <th>Acciones</th>
           </tr>
         </thead>

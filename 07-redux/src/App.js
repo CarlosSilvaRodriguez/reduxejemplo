@@ -12,6 +12,22 @@ function App() {
         <h1>Redux</h1>
         <CrudApi />
         <hr />
+        
+      </div>
+    </Provider>
+  );
+}
+
+export default App;
+
+/*
+function App() {
+  return (
+    <Provider store={store}>
+      <div style={{ textAlign: "center" }}>
+        <h1>Redux</h1>
+        <CrudApi />
+        <hr />
         <ShoppingCart />
         <hr />
         <Contador />
@@ -21,5 +37,4 @@ function App() {
     </Provider>
   );
 }
-
-export default App;
+*/ 

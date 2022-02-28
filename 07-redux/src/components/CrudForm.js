@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const initailForm = {
-  name: "",
-  constellation: "",
   id: null,
+  contenido: "",
+  autor:"",
 };
+
 
 const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
   const [form, setForm] = useState(initailForm);
@@ -26,15 +27,18 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!form.name || !form.constellation) {
+    console.log("AUTOR :" + form.autor);
+    console.log("CONTENIDO :" + form.contenido);
+    if (!form.autor || !form.contenido) {
       alert("Datos incompletos");
       return;
     }
 
     if (form.id === null) {
       createData(form);
-    } else {
+      console.log("cONTENDIO:" + form.contenido +
+      " AUTOR " + form.autor );
+    } else { 
       updateData(form);
     }
 
@@ -52,17 +56,17 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="name"
-          placeholder="Nombre"
+          name="autor"
+          placeholder="autor.."
           onChange={handleChange}
-          value={form.name}
+          value={form.autor}
         />
         <input
           type="text"
-          name="constellation"
-          placeholder="Constelación"
+          name="contenido"
+          placeholder="contenido"
           onChange={handleChange}
-          value={form.constellation}
+          value={form.contenido}
         />
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpiar" onClick={handleReset} />

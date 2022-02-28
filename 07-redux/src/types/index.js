@@ -17,3 +17,12 @@ export const READ_ALL_DATA = "READ_ALL_DATA";
 export const UPDATE_DATA = "UPDATE_DATA";
 export const DELETE_DATA = "DELETE_DATA";
 export const NO_DATA = "NO_DATA";
+
+// CRUD MISION
+
+export const CREATE_DATA_M = "CREATE_DATA_M";
+export const READ_ALL_DATA_M = "READ_ALL_DATA_M";
+export const READ_DATA_M = "READ_DATA_M";
+export const UPDATE_DATA_M = "UPDATE_DATA_M";
+export const DELETE_DATA_M = "DELETE_DATA_M";
+export const NO_DATA_M = "NO_DATA_M";
